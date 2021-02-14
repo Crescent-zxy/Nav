@@ -5,7 +5,7 @@
   "author": "zxy <358996085@qq.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf dist && parcel build src/index.html --no-minify --public-url ./"
+    "build": "rm -rf dist && parcel build src/index.html --public-url ./"
   },
   "devDependencies": {
     "cssnano": "^4.1.10"
