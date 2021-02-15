@@ -2,11 +2,11 @@ const $lastLi = $('#last')
 const $siteList = $('.siteList')
 const nav = JSON.parse(localStorage.getItem('nav'))
 const hashMap = nav || [{
-    // logo: 'acfun.png',
+    logo: 'acfun.png',
     url: 'https://www.acfun.cn',
     link: 'acfun'
 }, {
-    // logo: 'bilibili.jpg',
+    logo: 'bilibili.jpg',
     url: 'https://www.bilibili.com/',
     link: 'bilibili'
 }]
@@ -16,7 +16,7 @@ const render = () => {
         const $li = $(`<li>
             <div class="site">
                 <div class="logo">
-                    ${node.logo ? `<img src="images/${node.logo}" alt="">` : node.link[0]}
+                    ${node.logo ? `<img src="../images/${node.logo}" alt="">` : node.link[0]}
                 </div>
                 <div class="link">${node.link}</div>
                 <div class="close">
