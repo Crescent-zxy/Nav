@@ -7,21 +7,45 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover">
     <title>Nav</title>
+    <link rel="shortcut icon" href="../images/nav.png" type="image/x-icon">
+    <link id="bgLink" rel="preload"
+        href="https://cn.bing.com/th?id=OHR.PurpleFlowers_ZH-CN7975901617_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg&amp;pid=hp"
+        as="image">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="header">
-        <form class="searchForm" method="get" action="https://www.baidu.com/s">
-            <input name="wd" type="text">
-            <button type="submit">搜索</button>
-        </form>
+        <div>
+            <div class="cat"></div>
+            <div class="search">
+                <form class="searchForm" method="get" action="https://www.baidu.com/s">
+                    <input name="wd" type="text">
+                    <button type="submit">
+                        <svg t="1613483884313" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="3616" width="40" height="40">
+                            <path
+                                d="M959.744 870.592l-199.808-199.808a382.08 382.08 0 0 0 71.552-222.72c0-212.032-171.968-384-384-384S64 235.968 64 448s171.456 384 383.488 384a381.952 381.952 0 0 0 222.72-71.552l199.808 199.808 89.728-89.664zM447.488 704a256 256 0 1 1 0-512 256 256 0 0 1 0 512z"
+                                p-id="3617" fill="#707070"></path>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
     </header>
     <main class="main">
+        <!-- <img src="https://www.baidu.com/favicon.ico" alt=""> -->
         <ul class="siteList">
             <li id="last">
                 <div id="add" class="site">
-                    <div class="logo">+</div>
+                    <div class="logo">
+                        <svg t="1613481606380" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="2492" width="40" height="40">
+                            <path
+                                d="M809.984 553.984l-256 0 0 256-84.010667 0 0-256-256 0 0-84.010667 256 0 0-256 84.010667 0 0 256 256 0 0 84.010667z"
+                                p-id="2493" fill="#707070"></path>
+                        </svg>
+                    </div>
                     <div class="link">新增</div>
                 </div>
             </li>
