@@ -2,15 +2,16 @@ const $lastLi = $('#last')
 const $siteList = $('.siteList')
 const nav = JSON.parse(localStorage.getItem('nav'))
 const hashMap = nav || [{
-    url: 'https://weibo.com/',
-    link: 'weibo.com'
-}, {
     url: 'https://www.bilibili.com',
     link: 'bilibili.com'
+}, {
+    url: 'https://weibo.com/',
+    link: 'weibo.com'
 }, {
     url: 'https://github.com/',
     link: 'github.com'
 }]
+
 const render = () => {
     $siteList.find('li:not(#last)').remove()
     hashMap.forEach((node, index) => {

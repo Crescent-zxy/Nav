@@ -32,8 +32,9 @@ svg {
 
 /* style */
 body {
-    background-color: #fff
-        /* background: #FFF url("https://cn.bing.com/th?id=OHR.PurpleFlowers_ZH-CN7975901617_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg&amp;pid=hp") repeat-x 0 */
+    background-color: #fff;
+    /* background: #FFF url("https://cn.bing.com/th?id=OHR.PurpleFlowers_ZH-CN7975901617_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg&amp;pid=hp") repeat-x 0 */
+    height: 100vh;
 }
 
 .header {
@@ -100,7 +101,7 @@ body {
     justify-content: space-between;
 }
 
-.siteList .site {
+.site {
     width: 160px;
     display: flex;
     justify-content: center;
@@ -115,7 +116,7 @@ body {
     cursor: pointer;
 }
 
-.siteList .site>.logo {
+.site>.logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,18 +129,17 @@ body {
     background-color: #fff;
 }
 
-.siteList .site>.link {
+.site>.link {
     font-size: 14px;
     color: #707070;
 }
 
-.siteList .site>.close {
+.site>.close {
     height: 24px;
     width: 24px;
     position: absolute;
     top: 5px;
     right: 5px;
-    display: none;
     cursor: default;
 }
 
@@ -167,11 +167,15 @@ body {
         margin-right: -25px;
     }
 
-    .siteList .site {
+    .site {
         margin-right: 25px;
     }
 
-    .siteList .site:hover>.close {
+    .site>.close {
+        display: none;
+    }
+
+    .site:hover>.close {
         display: block;
     }
 }
